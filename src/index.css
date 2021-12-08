@@ -1,0 +1,104 @@
+body {
+  padding: 20px;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 40px;
+}
+.snake-container {
+  text-align: center;
+}
+.game-border {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  border: 1px solid black;
+  background-color: #0e790ed5;
+}
+.point-bar {
+  margin: 5px auto;
+}
+.game-splash {
+  position: absolute;
+  top: 25;
+  left: 25;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #751b1bd5;
+}
+.game-splash div,
+button {
+  margin: 20px 0;
+}
+.game-splash div {
+  font-size: 60px;
+  color: white;
+}
+.game-splash button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #c71e1e;
+  background-color: #3da167;
+  color: rgb(27, 116, 42);
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 25px;
+  transition: 0.5s;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.game-splash button:hover {
+  background-color: rgb(155, 82, 82);
+  cursor: pointer;
+  color: #1c2363;
+}
+.snake-mobile-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.snake-mobile-buttons div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.snake-mobile-buttons div button {
+  margin: 5px 100px;
+  padding: 8px 20px;
+  border-radius: 0;
+  border: 1px solid rgb(197, 28, 28);
+}
+.snake-title {
+  margin-top: 0%;
+  margin-bottom: 10px;
+  font-size: 1, 5em;
+  color: rgb(32, 173, 32);
+}
+
+@media only screen and (max-width: 320px) {
+  .snake-title {
+    grid-template-columns: auto;
+  }
+  .game-splash {
+    grid-template-columns: auto;
+  }
+  .body {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .snake-title {
+    grid-template-columns: auto;
+  }
+  .game-splash {
+    grid-template-columns: auto;
+  }
+}
